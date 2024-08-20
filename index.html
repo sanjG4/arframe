@@ -42,38 +42,5 @@
 
     </a-scene>
 
-    <script>
-      // Function to hide an element
-      function hideElement(element) {
-        element.setAttribute('visible', 'false');
-      }
-
-      // Get the elements by their IDs
-      var redSphere = document.getElementById('redSphere');
-      var greenTorus = document.getElementById('greenTorus');
-      var welcomeText = document.getElementById('welcomeText');
-
-      // Add event listeners for both click and touch events
-      redSphere.addEventListener('click', function () {
-        hideElement(redSphere);
-      });
-      redSphere.addEventListener('touchstart', function () {
-        hideElement(redSphere);
-      });
-
-      greenTorus.addEventListener('click', function () {
-        hideElement(greenTorus);
-      });
-      greenTorus.addEventListener('touchstart', function () {
-        hideElement(greenTorus);
-      });
-
-      welcomeText.addEventListener('click', function () {
-        hideElement(welcomeText);
-      });
-      welcomeText.addEventListener('touchstart', function () {
-        hideElement(welcomeText);
-      });
-    </script>
   </body>
 </html>
