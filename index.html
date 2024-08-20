@@ -10,13 +10,42 @@
       <!-- AR marker -->
       <a-marker preset="hiro">
 
-        <!-- Simple red sphere -->
+        <!-- Rotating red sphere -->
         <a-sphere 
           position="0 0.5 0" 
           radius="0.5" 
           material="color: red; opacity: 0.8;" 
           animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"
         ></a-sphere>
+        
+        <!-- Rotating green torus -->
+        <a-torus 
+          position="-1 0.5 0" 
+          radius="0.3" 
+          radius-tubular="0.1" 
+          material="color: green; opacity: 0.8;" 
+          animation="property: rotation; to: 360 360 0; loop: true; dur: 3000"
+        ></a-torus>
+        
+        <!-- Floating text -->
+        <a-text 
+          value="Welcome to AR!" 
+          position="-1.5 2 0" 
+          rotation="-30 0 0" 
+          color="yellow" 
+          width="4"
+          animation="property: position; to: -1.5 2.5 0; dir: alternate; loop: true; dur: 1500"
+        ></a-text>
+
+        <!-- Image plane -->
+        <a-plane 
+          src="https://via.placeholder.com/150" 
+          position="0 1 -1" 
+          width="1" 
+          height="1" 
+          material="opacity: 0.9;" 
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 6000"
+        ></a-plane>
 
       </a-marker>
 
