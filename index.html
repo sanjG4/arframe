@@ -13,7 +13,7 @@
         radius="0.5" 
         material="color: red; opacity: 0.8;" 
         animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"
-        event-set__click="_event: click; scale: 0 0 0"
+        event-set__click="_event: click; visible: false"
       ></a-sphere>
       
       
@@ -24,7 +24,7 @@
         radius-tubular="0.1" 
         material="color: green; opacity: 0.8;" 
         animation="property: rotation; to: 360 360 0; loop: true; dur: 3000"
-        event-set__click="_event: click; scale: 0 0 0"
+        event-set__click="_event: click; visible: false"
       ></a-torus>
       
       <!-- Floating text that disappears on click -->
@@ -35,7 +35,7 @@
         color="yellow" 
         width="4"
         animation="property: position; to: -1.5 2.5 0; dir: alternate; loop: true; dur: 1500"
-        event-set__click="_event: click; scale: 0 0 0"
+        event-set__click="_event: click; visible: false"
       ></a-text>
 
       <!-- AR marker camera -->
