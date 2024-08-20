@@ -10,31 +10,31 @@
       <!-- AR marker -->
       <a-marker preset="hiro">
 
-        <!-- Rotating red sphere -->
+        <!-- Smaller rotating red sphere -->
         <a-sphere 
-          position="0 0.5 0" 
-          radius="0.5" 
+          position="0 0.25 0" 
+          radius="0.2" 
           material="color: red; opacity: 0.8;" 
           animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"
         ></a-sphere>
         
-        <!-- Rotating green torus -->
+        <!-- Smaller rotating green torus -->
         <a-torus 
-          position="-1 0.5 0" 
-          radius="0.3" 
-          radius-tubular="0.1" 
+          position="-0.5 0.25 0" 
+          radius="0.15" 
+          radius-tubular="0.05" 
           material="color: green; opacity: 0.8;" 
           animation="property: rotation; to: 360 360 0; loop: true; dur: 3000"
         ></a-torus>
         
-        <!-- Floating text -->
+        <!-- Floating text, resized and repositioned -->
         <a-text 
           value="Welcome to AR!" 
-          position="-1.5 2 0" 
-          rotation="-30 0 0" 
+          position="0 0.8 0" 
+          rotation="0 0 0" 
           color="yellow" 
-          width="4"
-          animation="property: position; to: -1.5 2.5 0; dir: alternate; loop: true; dur: 1500"
+          width="2"  <!-- Adjusted width for better fit -->
+          align="center"  <!-- Centered alignment -->
         ></a-text>
 
       </a-marker>
