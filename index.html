@@ -6,36 +6,41 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs="sourceType: webcam;">
+      
+      <!-- AR marker -->
+      <a-marker preset="hiro">
 
-      <!-- Rotating red sphere that disappears on click or touch -->
-      <a-sphere 
-        id="redSphere"
-        position="0 0.5 0" 
-        radius="0.5" 
-        material="color: red; opacity: 0.8;" 
-        animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"
-      ></a-sphere>
-      
-      <!-- Rotating green torus that disappears on click or touch -->
-      <a-torus 
-        id="greenTorus"
-        position="-1 0.5 0" 
-        radius="0.3" 
-        radius-tubular="0.1" 
-        material="color: green; opacity: 0.8;" 
-        animation="property: rotation; to: 360 360 0; loop: true; dur: 3000"
-      ></a-torus>
-      
-      <!-- Floating text that disappears on click or touch -->
-      <a-text 
-        id="welcomeText"
-        value="Welcome to AR!" 
-        position="-1.5 2 0" 
-        rotation="-30 0 0" 
-        color="yellow" 
-        width="4"
-        animation="property: position; to: -1.5 2.5 0; dir: alternate; loop: true; dur: 1500"
-      ></a-text>
+        <!-- Rotating red sphere that disappears on click or touch -->
+        <a-sphere 
+          id="redSphere"
+          position="0 0.5 0" 
+          radius="0.5" 
+          material="color: red; opacity: 0.8;" 
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"
+        ></a-sphere>
+        
+        <!-- Rotating green torus that disappears on click or touch -->
+        <a-torus 
+          id="greenTorus"
+          position="-1 0.5 0" 
+          radius="0.3" 
+          radius-tubular="0.1" 
+          material="color: green; opacity: 0.8;" 
+          animation="property: rotation; to: 360 360 0; loop: true; dur: 3000"
+        ></a-torus>
+        
+        <!-- Floating text that disappears on click or touch -->
+        <a-text 
+          id="welcomeText"
+          value="Welcome to AR!" 
+          position="-1.5 2 0" 
+          rotation="-30 0 0" 
+          color="yellow" 
+          width="4"
+          animation="property: position; to: -1.5 2.5 0; dir: alternate; loop: true; dur: 1500"
+        ></a-text>
+        
+      </a-marker>
 
       <!-- AR marker camera -->
       <a-marker-camera preset="hiro"></a-marker-camera>
